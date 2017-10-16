@@ -44,7 +44,7 @@ app.post('/webhook/', function(req, res) {
         console.log("\n\nGENERIC: Welcome to chatbot\n\n")
         // interactions.sendGenericMessage(sender)
         var regex = new RegEx(text);
-        console.log("\nDOES IT EXIST? ", regex, "\n\n");
+        console.log("\nDOES IT EXIST? ", regex.test(lyrics), "\n\n");
 				interactions.sendTextMessage(sender, "it means no worries!")
         continue
       }

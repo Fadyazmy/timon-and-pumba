@@ -1,5 +1,4 @@
-module.exports.song = {
-  [
+module.exports.song = [
     "Hakuna Matata!",
     "What a wonderful phrase",
     "Hakuna Matata!",
@@ -43,4 +42,3 @@ module.exports.song = {
     "It's our problem-free philosophy",
     "Hakuna Matata"
   ]
-}
