@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
 const interactions = require('./interactions');
+const lyrics = require('./song/hakuna_matata').song;
 
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 
@@ -42,6 +43,8 @@ app.post('/webhook/', function(req, res) {
       if (text === 'hakuna matata') {
         console.log("\n\nGENERIC: Welcome to chatbot\n\n")
         // interactions.sendGenericMessage(sender)
+        var regex = new RegEx(text);
+        console.log("\nDOES IT EXIST? ", regex, "\n\n");
 				interactions.sendTextMessage(sender, "it means no worries!")
         continue
       }
