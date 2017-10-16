@@ -40,7 +40,7 @@ app.post('/webhook/', function(req, res) {
     let sender = event.sender.id
     if (event.message && event.message.text) {
       let text = event.message.text
-      if (text === 'hakuna matata') {
+      if (text === 'Hakuna matata') {
         console.log("\n\nGENERIC: Welcome to chatbot\n\n")
         // interactions.sendGenericMessage(sender)
         var regex = new RegExp(text);
