@@ -1,46 +1,46 @@
 module.exports.song = {
   [
-    "Hakuna Matata!\n
-    What a wonderful phrase\n
-    Hakuna Matata!\n
-    Ain't no passing craze\n
-    It means no worries\n
-    For the rest of your days\n
-    It's our problem-free philosophy\n
-    Hakuna Matata!\n
-    Why, when he was a young warthog\n
-    When I was a young wart-hoooog!\n
-    Very nice!\n
-    Thanks!\n
-    He found his aroma lacked a certain appeal\n
-    He could clear the Savannah after every meal\n
-    I'm a sensitive soul, though I seem thick-skinned\n
-    And it hurt that my friends never stood downwind\n
-    And oh, the shame\n
-    (He was ashamed!)\n
-    Thought of changin' my name\n
-    (Oh, what's in a name?)\n
-    And I got downhearted\n
-    (How did you feel?)\n
-    Every time that I-\n
-    Pumbaa! Not in front of the kids!\n
-    Oh... sorry\n
-    Hakuna Matata!\n
-    What a wonderful phrase\n
-    Hakuna Matata!\n
-    Ain't no passing craze\n
-    It means no worries\n
-    For the rest of your days\n
-    Yeah, sing it, kid!\n
-    It's our problem-free philosophy\n
-    Hakuna Matata!\n
-    Hakuna Matata\n
-    Hakuna Matata\n
-    Hakuna Matata\n
-    Hakuna\n
-    It means no worries\n
-    For the rest of your days\n
-    It's our problem-free philosophy\n
-    Hakuna Matata\n"
+    "Hakuna Matata!",
+    "What a wonderful phrase",
+    "Hakuna Matata!",
+    "Ain't no passing craze"
+    "It means no worries",
+    "For the rest of your days",
+    "It's our problem-free philosophy",
+    "Hakuna Matata!",
+    "Why, when he was a young warthog",
+    "When I was a young wart-hoooog!",
+    "Very nice!",
+    "Thanks!",
+    "He found his aroma lacked a certain appeal",
+    "He could clear the Savannah after every meal",
+    "I'm a sensitive soul, though I seem thick-skinned",
+    "And it hurt that my friends never stood downwind",
+    "And oh, the shame",
+    "(He was ashamed!)",
+    "Thought of changin' my name",
+    "(Oh, what's in a name?)"
+    "And I got downhearted"
+    "(How did you feel?)"
+    "Every time that I-"
+    "Pumbaa! Not in front of the kids!"
+    "Oh... sorry",
+    "Hakuna Matata!",
+    "What a wonderful phrase",
+    "Hakuna Matata!",
+    "Ain't no passing craze",
+    "It means no worries",
+    "For the rest of your days",
+    "Yeah, sing it, kid!",
+    "It's our problem-free philosophy",
+    "Hakuna Matata!",
+    "Hakuna Matata",
+    "Hakuna Matata",
+    "Hakuna Matata",
+    "Hakuna",
+    "It means no worries",
+    "For the rest of your days",
+    "It's our problem-free philosophy",
+    "Hakuna Matata"
   ]
 }
