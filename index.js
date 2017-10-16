@@ -44,12 +44,11 @@ app.post('/webhook/', function(req, res) {
         console.log("\n\nGENERIC: Welcome to chatbot\n\n")
         // interactions.sendGenericMessage(sender)
         var regex = new RegExp(text);
-        console.log("\nDOES IT EXIST? FOR:", regex , "\nANSWER: ",regex.test(lyrics), "\n\n######\n\n",
-          lyrics[lyrics.indexOf(text) + 1]);
+        console.log("\nDOES IT EXIST? FOR:", regex , "\nANSWER: ",regex.test(lyrics), "\n\n######\n\n");
 				interactions.sendTextMessage(sender, "it means no worries!")
         continue
       }
-      interactions.sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+      interactions.sendTextMessage(sender, lyrics[lyrics.indexOf(text) + 1]))
     }
     if (event.postback) {
       let text = JSON.stringify(event.postback)
