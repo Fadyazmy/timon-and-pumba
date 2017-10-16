@@ -50,7 +50,7 @@ app.post('/webhook/', function(req, res) {
         continue
       }
 
-      var indexIThink = lyrics.findIndex(item => text.toLowerCase() === item.replace(/[^a-zA-Z ]/, "").toLowerCase())
+      var indexIThink = lyrics.findIndex(item => text.replace(/[^a-zA-Z ]/, "").toLowerCase() === item.replace(/[^a-zA-Z ]/, "").toLowerCase())
       interactions.sendTextMessage(sender, lyrics[indexIThink + 1])
     }
     if (event.postback) {
