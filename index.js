@@ -40,12 +40,12 @@ app.post('/webhook/', function(req, res) {
     let sender = event.sender.id
     if (event.message && event.message.text) {
       let text = event.message.text
-      if (text === 'Hakuna matata') {
+      if (text === 'FADY') {
         console.log("\n\nGENERIC: Welcome to chatbot\n\n")
         // interactions.sendGenericMessage(sender)
         var regex = new RegExp(text);
         console.log("\nDOES IT EXIST? FOR:", regex , "\nANSWER: ",regex.test(lyrics), "\n\n######\n\n");
-				interactions.sendTextMessage(sender, "it means no worries!")
+				interactions.sendTextMessage(sender, "it means no worries! ;)")
         continue
       }
       interactions.sendTextMessage(sender, lyrics[lyrics.indexOf(text) + 1])
