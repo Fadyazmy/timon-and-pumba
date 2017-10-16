@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
 const interactions = require('./interactions');
-const lyrics = require('./song/hakuna_matata').song;
+const lyrics = require('./songs/hakuna_matata').song;
 
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 
