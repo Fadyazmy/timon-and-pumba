@@ -11,3 +11,11 @@ Try it out @ https://messenger.com/
 
 Current songs (more to come!):
 - Hakuna Matata
+
+
+TODO:
+- Better Regex to consider more possible versions of a string
+- make a method that generates access token not hard coded anymore
+- Support at least 3 songs
+- More efficient searching algorithms
+- More Timon  / Pumba  personality
