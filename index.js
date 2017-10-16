@@ -48,7 +48,7 @@ app.post('/webhook/', function(req, res) {
 				interactions.sendTextMessage(sender, "it means no worries!")
         continue
       }
-      interactions.sendTextMessage(sender, lyrics[lyrics.indexOf(text) + 1]))
+      interactions.sendTextMessage(sender, lyrics[lyrics.indexOf(text) + 1])
     }
     if (event.postback) {
       let text = JSON.stringify(event.postback)
