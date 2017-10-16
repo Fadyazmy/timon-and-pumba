@@ -1,4 +1,4 @@
-module.exports.song {
+module.exports.song = {
   [
     "Hakuna Matata!\n
     What a wonderful phrase\n
