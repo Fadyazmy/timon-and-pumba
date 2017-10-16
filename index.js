@@ -31,6 +31,7 @@ app.get('/webhook/', function(req, res) {
   }
 })
 
+
 // to post data
 app.post('/webhook/', function(req, res) {
   console.log("REQ.BODY.entry[0]: ", req.body.entry[0]);
@@ -48,7 +49,9 @@ app.post('/webhook/', function(req, res) {
 				interactions.sendTextMessage(sender, "it means no worries! ;)")
         continue
       }
-      interactions.sendTextMessage(sender, lyrics[lyrics.indexOf(text) + 1])
+
+      var indexIThink = lyrics.findIndex(item => text.toLowerCase() === item.replaceAll("[^a-zA-Z ]", "").toLowerCase())
+      interactions.sendTextMessage(sender, lyrics[indexIThink + 1])
     }
     if (event.postback) {
       let text = JSON.stringify(event.postback)
