@@ -36,7 +36,7 @@ app.get('/webhook/', function(req, res) {
 })
 
 function checkifEqual(string1, string2) {
-  return string1.replace(/[^a-zA-Z ]/, "").toLowerCase() === string2.replace(/[^a-zA-Z ]/, "").toLowerCase();
+  return string1.replace(/[^a-zA-Z ]/gi, "").toLowerCase() === string2.replace(/[^a-zA-Z ]/gi, "").toLowerCase();
 }
 
 
