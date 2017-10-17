@@ -8,7 +8,6 @@ const FB = require('fb');
 
 // custom
 const interactions = require('./interactions');
-const config = require('./config');
 const FB_AUTH = require('./FB_auth');
 const lyrics = require('./songs/hakuna_matata').song;
 
