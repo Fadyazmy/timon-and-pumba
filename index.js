@@ -4,10 +4,15 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
+const FB = require('fb');
+
+// custom
 const interactions = require('./interactions');
+const config = require('./config');
+const FB_AUTH = require('./FB_auth');
 const lyrics = require('./songs/hakuna_matata').song;
 
-const token = process.env.FB_PAGE_ACCESS_TOKEN
+const token = FB_AUTH.GetAccessToken();
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -31,6 +36,10 @@ app.get('/webhook/', function(req, res) {
   }
 })
 
+function checkifEqual(string1, string2) {
+  return string1.replace(/[^a-zA-Z ]/, "").toLowerCase() === string2.replace(/[^a-zA-Z ]/, "").toLowerCase();
+}
+
 
 // to post data
 app.post('/webhook/', function(req, res) {
@@ -50,7 +59,7 @@ app.post('/webhook/', function(req, res) {
         continue
       }
 
-      var indexIThink = lyrics.findIndex(item => text.replace(/[^a-zA-Z ]/, "").toLowerCase() === item.replace(/[^a-zA-Z ]/, "").toLowerCase())
+      var indexIThink = lyrics.findIndex(item => checkifEqual(text, item))
       interactions.sendTextMessage(sender, lyrics[indexIThink + 1])
     }
     if (event.postback) {
