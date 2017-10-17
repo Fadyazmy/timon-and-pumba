@@ -15,7 +15,8 @@ Current songs (more to come!):
 
 TODO:
 - Better Regex to consider more possible versions of a string
-- make a method that generates access token not hard coded anymore
-- Support at least 3 songs
-- More efficient searching algorithms
-- More Timon  / Pumba  personality
+  - v1: punctuation agnostic - DONE
+  - v2: close/similar/typos representations of words would work i.e "wart-hoooog" = "warthog"
+- Support at least 3 songs (v4)
+- More efficient searching algorithms (v3)
+- More Timon / Pumba personality (v4)
