@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 
-console.log(interactions.getlNextline("who"))
+console.log(interactions.getlNextline("And the land iz darc"))
 
 // index
 app.get('/', function(req, res) {
@@ -47,6 +47,7 @@ app.post('/webhook/', function(req, res) {
 
     if (event.message && event.message.text) {
       let text = event.message.text;
+
       if (text === 'FADY') {
         console.log("\n\nFady when can I take off this hat!\n\n");
 
@@ -54,7 +55,7 @@ app.post('/webhook/', function(req, res) {
         continue
       }
 
-      // Reply with the next line of the song ;)
+      // Reply with song name and next line ;)
       interactions.sendTextMessage(sender, interactions.getlNextline(text));
     }
   }

@@ -1,24 +1,37 @@
 const request = require('request')
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 const songs = require('./songs/index');
+var levenshtein = require('fast-levenshtein');
 
 module.exports = {
+  removeDuplicates: function(string){
+    return  string.replace(/[^\w\s]|(.)(?=\1)/gi, "");
+  },
+  removePunctAndLowerCase: function(string){
+    return string.replace(/[^a-zA-Z ]/gi, "").toLowerCase();
+  },
   checkifEqual: function(string1, string2) {
-    return string1.replace(/[^a-zA-Z ]/gi, "").toLowerCase() === string2.replace(/[^a-zA-Z ]/gi, "").toLowerCase();
+    let cleanedString1 = this.removeDuplicates(this.removePunctAndLowerCase(string1));
+    let cleanedString2 = this.removeDuplicates(this.removePunctAndLowerCase(string2));
+
+    let trial1 = cleanedString1 === cleanedString2;
+    let trial2 = (levenshtein.get(string1, string2) <3)
+
+    return (trial1 || trial2)
   },
   getlNextline: function(line) {
     for (let i = 0; i < Object.keys(songs).length; i++ ){
       // return string if match in song[i]
       // console.log("LOGING: ", songs[i][1]);
-        var indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item))
+        var indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item));
         if (indexIThink != -1){
-          // console.log( "ANSWER: ",songs[i][1][indexIThink + 1]);
           let name = songs[i][0];
           let nextline = songs[i][1][indexIThink + 1];
           let response = "["+songs[i][0]+"]"+ "\n\n"+ nextline;
           return response;
       }
     }
+    return "Hey Pubma! Do you know what song this is!";
   },
   sendTextMessage: function(sender, text) {
     let messageData = {
