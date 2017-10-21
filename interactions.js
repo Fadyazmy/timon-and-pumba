@@ -9,10 +9,14 @@ module.exports = {
   getlNextline: function(line) {
     for (let i = 0; i < Object.keys(songs).length; i++ ){
       // return string if match in song[i]
-        var indexIThink = songs[i].findIndex(item => this.checkifEqual(line, item))
+      // console.log("LOGING: ", songs[i][1]);
+        var indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item))
         if (indexIThink != -1){
-          console.log( "ANSWER: ",songs[i][indexIThink + 1]);
-          return songs[i][indexIThink + 1];
+          // console.log( "ANSWER: ",songs[i][1][indexIThink + 1]);
+          let name = songs[i][0];
+          let nextline = songs[i][1][indexIThink + 1];
+          let response = "["+songs[i][0]+"]"+ "\n\n"+ nextline;
+          return response;
       }
     }
   },

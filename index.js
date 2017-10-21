@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 
-// interactions.getlNextline("who")
+console.log(interactions.getlNextline("who"))
 
 // index
 app.get('/', function(req, res) {

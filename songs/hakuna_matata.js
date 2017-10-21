@@ -1,4 +1,6 @@
-module.exports.song = [
+let song;
+let name = "Hakuna Matata";
+let lyrics = [
     "Hakuna Matata!",
     "What a wonderful phrase",
     "Hakuna Matata!",
@@ -42,3 +44,7 @@ module.exports.song = [
     "It's our problem-free philosophy",
     "Hakuna Matata"
   ];
+
+module.exports = {
+  song: [name, lyrics]
+};

@@ -1,4 +1,6 @@
-module.exports.song = [
+let song;
+let name = "Stand By Me";
+let lyrics = [
   "When the night has come",
   "And the land is dark",
   "And the moon is the only light we'll see",
@@ -33,3 +35,7 @@ module.exports.song = [
   "Oh oh oh oh stand by me",
   "Oooh, heey"
 ];
+
+module.exports = {
+  song: [name, lyrics]
+};

@@ -1,4 +1,6 @@
-module.exports.song = [
+let song;
+let name = "Can you feel the love tonight?";
+let lyrics = [
   "I can see what's happening",
   "What?",
   "And they don't have a clue",
@@ -33,4 +35,8 @@ module.exports.song = [
   "It can be assumed",
   "His carefree days with us are history",
   "In short, our pal is doomed"
-]
+];
+
+module.exports = {
+  song: [name, lyrics]
+};
