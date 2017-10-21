@@ -23,6 +23,7 @@ Check me out at https://fb.com/TimonAndPumbaFanPage.
   - close/similar/typos representations of words would work i.e "wart-hoooog" = "warthog" (v2) - DONE
 - More efficient searching algorithms (v3) - DONE
 - Support at least 3 songs (v4) - DONE
+- Provide initial greetings, and find out how to make the chatbot recognized by FB
 - Sing to Timon and Bumpa and they sing back the next sentance! (v5)
 
 

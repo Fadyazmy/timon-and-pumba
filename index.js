@@ -9,8 +9,8 @@ const FB = require('fb');
 // custom
 const interactions = require('./interactions');
 const FB_AUTH = require('./FB_auth');
-const lyrics = require('./songs/hakuna_matata').song;
 const songs = require('./songs/index');
+const commands = require('./commands');
 
 const token = FB_AUTH.GetAccessToken();
 app.set('port', (process.env.PORT || 5000))
@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({
 
 
 console.log(interactions.getlNextline("And the land iz darc"))
+console.log("TESTING commands; ", commands['fady']);
 
 // index
 app.get('/', function(req, res) {
@@ -48,10 +49,9 @@ app.post('/webhook/', function(req, res) {
     if (event.message && event.message.text) {
       let text = event.message.text;
 
-      if (text === 'FADY') {
+      if (commands[interactions.removePunctAndLowerCase(text)]) {
         console.log("\n\nFady when can I take off this hat!\n\n");
-
-				interactions.sendTextMessage(sender, "it means no worries man! ;)")
+				interactions.sendTextMessage(sender, commands[text])
         continue
       }
 
