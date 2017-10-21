@@ -1,7 +1,7 @@
 # Timon & Pumba Singing chatbot! (Fanpage)
 
 
-Sing ONE line of your favorite ***Timon and Pumba*** song, and they will sing back the next line!
+Sing/type ONE line of your favorite ***Timon and Pumba*** song, and they'll sing back (the next line)!
 
 Try it out @ https://messenger.com/
 
