@@ -3,7 +3,8 @@
 
 Sing/type ONE line of your favorite ***Timon and Pumba*** song, and they'll sing back (the next line)!
 
-Try it out @ https://messenger.com/
+Try me out @ https://messenger.com/TimonAndPumbaFanPage/.
+Check me out at https://fb.com/TimonAndPumbaFanPage.
 
 ### Current songs (more to come!):
 - Hakuna Matata
