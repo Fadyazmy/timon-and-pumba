@@ -21,7 +21,7 @@ module.exports.song = [
   "Eeh, I don't think I like this song!",
   "So, Pumbaa, Pumbaa, stand by me",
   "Oh oh won't you stand by me",
-  "Ooh stand, come on, stand by me, stand by me",,
+  "Ooh stand, come on, stand by me, stand by me",
   "Timon?",
   "Yes?",
   "Can I sing the next song?",

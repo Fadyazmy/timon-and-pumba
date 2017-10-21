@@ -1,7 +1,20 @@
 const request = require('request')
 const token = process.env.FB_PAGE_ACCESS_TOKEN
+const songs = require('./songs/index');
 
 module.exports = {
+  checkifEqual: function(string1, string2) {
+    return string1.replace(/[^a-zA-Z ]/gi, "").toLowerCase() === string2.replace(/[^a-zA-Z ]/gi, "").toLowerCase();
+  },
+  getlNextline: function(line) {
+    for (let i = 0; i < Object.keys(songs).length; i++ ){
+      // return string if match in song[i]
+        var indexIThink = songs[i].findIndex(item => this.checkifEqual(line, item))
+        if (indexIThink != -1){
+          console.log( "ANSWER: ",songs[i][indexIThink + 1]);
+      }
+    }
+  },
   sendTextMessage: function(sender, text) {
     let messageData = {
       text: text
