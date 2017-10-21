@@ -12,6 +12,7 @@ module.exports = {
         var indexIThink = songs[i].findIndex(item => this.checkifEqual(line, item))
         if (indexIThink != -1){
           console.log( "ANSWER: ",songs[i][indexIThink + 1]);
+          return songs[i][indexIThink + 1];
       }
     }
   },
