@@ -41,4 +41,4 @@ module.exports.song = [
     "For the rest of your days",
     "It's our problem-free philosophy",
     "Hakuna Matata"
-  ]
+  ];
