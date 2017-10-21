@@ -15,7 +15,7 @@ module.exports = {
     let cleanedString2 = this.removeDuplicates(this.removePunctAndLowerCase(string2));
 
     let trial1 = cleanedString1 === cleanedString2;
-    let trial2 = (levenshtein.get(string1, string2) <3)
+    let trial2 = (levenshtein.get(cleanedString1, cleanedString2) <3)
 
     return (trial1 || trial2)
   },
