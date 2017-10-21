@@ -1,21 +1,21 @@
 # Timon & Pumba Singing chatbot! (Fanpage)
 
 
-Sing ONE line of your favorite Timon and Pumba song, and they will sing back the next line!
+Sing ONE line of your favorite ***Timon and Pumba*** song, and they will sing back the next line!
 
 Try it out @ https://messenger.com/
 
-Current songs (more to come!):
+###Current songs (more to come!):
 - Hakuna Matata
 - Can you feel the love tonight?
 - Stand by me
 
-Current flexibility:
+###Current flexibility:
 - Ignores punctuation i.e "who?" = "who"
 - Ignores repeating characters i.e "whoo" = "who"
 - levenshtein algorithm  i.e "And the land iz darc" = "And the land is dark"
 
-TODO:
+###TODO:
 - Better Regex to consider more possible versions of a string
   - punctuation agnostic (v1) - DONE
   - close/similar/typos representations of words would work i.e "wart-hoooog" = "warthog" (v2) - DONE
