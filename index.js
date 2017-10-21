@@ -49,14 +49,15 @@ app.post('/webhook/', function(req, res) {
     if (event.message && event.message.text) {
       let text = event.message.text;
 
+      // if text matches command
       if (commands[interactions.removePunctAndLowerCase(text)]) {
-        console.log("\n\nFady when can I take off this hat!\n\n");
 				interactions.sendTextMessage(sender, commands[text])
         continue
       }
-
-      // Reply with song name and next line ;)
-      interactions.sendTextMessage(sender, interactions.getlNextline(text));
+      else {
+        // Reply with song name and next line ;)
+        interactions.sendTextMessage(sender, interactions.getlNextline(text));  
+      }
     }
   }
   res.sendStatus(200);
