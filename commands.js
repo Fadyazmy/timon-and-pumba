@@ -15,5 +15,5 @@ module.exports = {
   "what songs do you know": getSongsList(songs),
   "song list": getSongsList(songs),
   "songs": getSongsList(songs),
-  "help": "List of commands: \nsongs \nWhat songs o you know? "
+  "help": "List of commands: \n> Songs \n> What songs do you know? "
 }

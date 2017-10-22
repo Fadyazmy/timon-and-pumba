@@ -15,7 +15,7 @@ Check me out at https://fb.com/TimonAndPumbaFanPage.
 ### Current flexibility:
 - Ignores punctuation i.e "who?" = "who"
 - Ignores repeating characters i.e "whoo" = "who"
-- levenshtein algorithm  i.e "And the land iz darc" = "And the land is dark"
+- levenshtein algorithm i.e "And the land iz darc" = "And the land is dark"
 
 ### TODO:
 - Better Regex to consider more possible versions of a string
@@ -23,8 +23,10 @@ Check me out at https://fb.com/TimonAndPumbaFanPage.
   - close/similar/typos representations of words would work i.e "wart-hoooog" = "warthog" (v2) - DONE
 - More efficient searching algorithms (v3) - DONE
 - Support at least 3 songs (v4) - DONE
-- Provide initial greetings, and find out how to make the chatbot recognized by FB
-- Sing to Timon and Bumpa and they sing back the next sentance! (v5)
+- Provide initial greetings, and find out how to make the chatbot recognized by FB (v5)
+- Sing to Timon and Bumpa and they sing back the next sentance! (v6)
+- Analytics for chatbot (v7)
+- Website for page (v8)
 
 
 NOTE: This is not affiliated with Disney or the creators of Timon & Pumba in any way.
