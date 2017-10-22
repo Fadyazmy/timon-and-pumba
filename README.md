@@ -3,9 +3,9 @@
 
 Sing/type ONE line of your favorite ***Timon and Pumba*** song, and they'll sing back (the next line)!
 
-Try me out @ https://messenger.com/TimonAndPumbaFanPage/.
+Try me out @ https://messenger.com/Timon-Pumba-Fanpage-123330215012542/.
 
-Check me out at https://fb.com/TimonAndPumbaFanPage.
+Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 
 ### Current songs (more to come!):
 - Hakuna Matata
@@ -25,8 +25,9 @@ Check me out at https://fb.com/TimonAndPumbaFanPage.
 - Support at least 3 songs (v4) - DONE
 - Provide initial greetings, and find out how to make the chatbot recognized by FB (v5)
 - Sing to Timon and Bumpa and they sing back the next sentance! (v6)
-- Analytics for chatbot (v7)
-- Website for page (v8)
+- Respond with a variety of (custom made) GIFs, video snippets and text (v7)
+- Analytics for chatbot (v8)
+- Website for chatbot (v9)
 
 
 NOTE: This is not affiliated with Disney or the creators of Timon & Pumba in any way.
