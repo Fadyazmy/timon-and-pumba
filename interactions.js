@@ -26,8 +26,9 @@ module.exports = {
         var indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item));
         if (indexIThink != -1){
           let name = songs[i][0];
-          let nextline = songs[i][1][indexIThink + 1];
-          let response = "["+songs[i][0]+"]"+ "\n\n"+ nextline;
+          let currentLine = songs[i][1][indexIThink];
+          let nextLine = songs[i][1][indexIThink + 1];
+          let response = "["+songs[i][0]+"]"+ "\n\n"+ currentLine+ "\n"+nextLine;
           return response;
       }
     }
