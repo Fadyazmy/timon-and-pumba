@@ -10,28 +10,32 @@ module.exports = {
   removePunctAndLowerCase: function(string){
     return string.replace(/[^a-zA-Z ]/gi, "").toLowerCase();
   },
-  checkifEqual: function(string1, string2) {
+  checkifEqual: function(string1, string2,levenshteinIndex ) {
     let cleanedString1 = this.removeDuplicates(this.removePunctAndLowerCase(string1));
     let cleanedString2 = this.removeDuplicates(this.removePunctAndLowerCase(string2));
 
     let trial1 = cleanedString1 === cleanedString2;
-    let trial2 = (levenshtein.get(cleanedString1, cleanedString2) <3);
+    let trial2 = (levenshtein.get(cleanedString1, cleanedString2) <levenshteinIndex);
 
     return (trial1 || trial2);
   },
   getlNextline: function(line) {
-    for (let i = 0; i < Object.keys(songs).length; i++ ){
-      // return string if match in song[i]
-      // console.log("LOGING: ", songs[i][1]);
-        var indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item));
-        if (indexIThink != -1){
-          let name = songs[i][0];
-          let currentLine = songs[i][1][indexIThink];
-          let nextLine = songs[i][1][indexIThink + 1];
-          let response = "["+songs[i][0]+"]"+ "\n\n"+ currentLine+ "\n"+nextLine;
-          return response;
+    var indexIThink = -1;
+    for (let x = 1; x < 3 ; x ++ ){
+      for (let i = 0; i < Object.keys(songs).length; i++ ){
+        // return string if match in song[i]
+        // console.log("LOGING: ", songs[i][1]);
+          indexIThink = (songs[i])[1].findIndex(item => this.checkifEqual(line, item, x));
+          if (indexIThink != -1){
+            let name = songs[i][0];
+            let currentLine = songs[i][1][indexIThink];
+            let nextLine = songs[i][1][indexIThink + 1];
+            let response = "["+songs[i][0]+"]"+ "\n\n"+ currentLine+ "\n"+nextLine;
+            return response;
+        }
       }
     }
+
     return "Hey Pubma! Do you know what song this is!";
   },
   sendTextMessage: function(sender, text) {
