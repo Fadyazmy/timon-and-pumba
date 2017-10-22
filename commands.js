@@ -14,5 +14,6 @@ module.exports = {
   "fady": "it means no worries man! ;)",
   "what songs do you know": getAllSongs(songs),
   "song list": getAllSongs(songs),
-  "songs": getAllSongs(songs)
+  "songs": getAllSongs(songs),
+  "help": "List of commands: \nsongs \nWhat songs o you know? " 
 }
