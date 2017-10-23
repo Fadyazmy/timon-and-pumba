@@ -113,5 +113,10 @@ module.exports = {
         console.log('Error: ', response.body.error)
       }
     })
-  }
+  },
+  messPostback: function(senderID, posback){
+    this.sendTextMessage(senderID, {
+      text: "Postback from" + senderID+ JSON.stringify(postback);
+    })
+  },
 };

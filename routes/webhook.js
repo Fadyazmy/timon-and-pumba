@@ -22,6 +22,7 @@ router.post('/', function(req, res) {
     let event = req.body.entry[0].messaging[i];
     let sender = event.sender.id;
 
+    // IF NORMAL MESSAGE
     if (event.message && event.message.text) {
       let text = event.message.text;
 
@@ -34,6 +35,9 @@ router.post('/', function(req, res) {
         // Reply with song name and next line ;)
         interactions.sendTextMessage(sender, interactions.getlNextline(text));
       }
+    }
+    else if (event.postback && event.postback.payload){
+      interactions.messPostback(sender, event.postback);
     }
   }
   res.sendStatus(200);
