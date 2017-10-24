@@ -119,8 +119,8 @@ module.exports = {
       this.sendTextMessage(senderID, "Hello stranger! Pumba and I want to welcome you our fanpage! :)" );
     }else {
       this.sendTextMessage(senderID, {
-        text: "Postback from" + senderID+ JSON.stringify(postback);
-      })  
+        text: "Postback from" + senderID+ JSON.stringify(postback)
+      })
     }
   },
 };
