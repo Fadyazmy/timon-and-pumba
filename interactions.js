@@ -151,12 +151,14 @@ module.exports = {
          console.log("receive status code : " + response.statusCode);
        }
      });
-    }
+   };
+
     async.series([
       console.log("#######\nTYPING\n#######"),
-      setTimeout(sendBubbles(), 150),
+      sendBubbles(),
       console.log("#######\nCALBACKING\n#######"),
-      callback()
+      setTimeout(callback(), 150)
+
     ]);
 
     }
