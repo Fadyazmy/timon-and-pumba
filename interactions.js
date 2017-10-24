@@ -156,7 +156,7 @@ module.exports = {
       console.log("#######\nTYPING\n#######"),
       setTimeout(sendBubbles(), 150),
       console.log("#######\nCALBACKING\n#######"),
-      callback()
+      callback
     ]);
 
     }
