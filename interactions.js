@@ -115,8 +115,12 @@ module.exports = {
     })
   },
   messPostback: function(senderID, posback){
-    this.sendTextMessage(senderID, {
-      text: "Postback from" + senderID+ JSON.stringify(postback);
-    })
+    if (posback.payload == "GREETINGS_POSTBACK"){
+      this.sendTextMessage(senderID, "Hello stranger! Pumba and I want to welcome you our fanpage! :)" );
+    }else {
+      this.sendTextMessage(senderID, {
+        text: "Postback from" + senderID+ JSON.stringify(postback);
+      })  
+    }
   },
 };
