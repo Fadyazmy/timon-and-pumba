@@ -4,6 +4,7 @@ var router = express.Router();
 // custom
 const interactions = require('.././interactions');
 const commands = require('.././commands');
+const delay = require('delay');
 
 
 router.get('/', function(req, res) {
@@ -29,7 +30,17 @@ router.post('/', function(req, res) {
       // if text matches command
       var filteredText = commands[interactions.removePunctAndLowerCase(text)]
       if (filteredText) {
-          interactions.typingBubble(sender, 150, function(){interactions.sendTextMessage(sender, filteredText)});
+
+          async.series([
+            console.log("#######\nTYPING\n#######"),
+            interactions.typingBubble(sender);
+            console.log("#######\nCALBACKING\n#######"),
+            delay(100),
+            console.log("#######\nDELAYING\n########"),
+            interactions.sendTextMessage(sender, filteredText)
+
+          ]);
+
         continue
       }
       else {

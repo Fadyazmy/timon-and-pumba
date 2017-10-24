@@ -127,7 +127,7 @@ module.exports = {
 
     }
   },
-  typingBubble: function(senderID, length , callback){
+  typingBubble: function(senderID){
     var sendBubbles = function() {
       request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -153,17 +153,6 @@ module.exports = {
        }
      });
    };
-
-    async.series([
-      console.log("#######\nTYPING\n#######"),
-      sendBubbles(),
-      console.log("#######\nCALBACKING\n#######"),
-      delay(100),
-      console.log("#######\nDELAYING\n########")
-      callback()
-
-    ]);
-
-    }
+ }
 
 };
