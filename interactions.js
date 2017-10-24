@@ -127,16 +127,16 @@ module.exports = {
   },
   typingBubble: function(senderID){
     var options = {
-      url: 'https://graph.facebook.com/v2.10/me/messages',
+      url: 'https://graph.facebook.com/v2.6/me/messages',
       qs: {
-        access_token: process.env.FB_PAGE_APP_ID
+        access_token: token
       },
       method: 'POST',
       json: {
          recipient: {
              id: senderID
          },
-         sender_action: 'typing_on'
+         sender_action: "typing_on"
        }
      };
 
