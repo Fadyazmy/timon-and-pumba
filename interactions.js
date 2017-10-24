@@ -140,5 +140,19 @@ module.exports = {
          'body': 'something something'
        }
      }
+
+     request(options, function(error, response, body) {
+       if (error) {
+        console.log("TYPING DIDNT WORK"+error);
+        return;
+      }
+      if (response.statusCode == 200) {
+        console.log("TYPING WORKED!\n"+body);
+      } else {
+        console.log("receive status code : " + response.statusCode);
+      }
+    });
+
+
   }
 };
