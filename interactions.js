@@ -145,7 +145,7 @@ module.exports = {
          return;
        }
        if (response.statusCode == 200) {
-         console.log("TYPING WORKED!\n"+,body);
+         console.log("TYPING WORKED!\n",body);
        } else {
          console.log("receive status code : " + response.statusCode);
        }
