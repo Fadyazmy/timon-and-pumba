@@ -125,30 +125,57 @@ module.exports = {
 
     }
   },
-  typingBubble: function(senderID){
-    var options = {
-      url: 'https://graph.facebook.com/v2.6/me/messages',
-      qs: {
-        access_token: token
-      },
-      method: 'POST',
-      json: {
-         recipient: {
-             id: senderID
-         },
-         sender_action: "typing_on"
+  typingBubble: function(senderID, length , callback){
+    var sendBubbles = function() {
+      request(var options = {
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {
+          access_token: token
+        },
+        method: 'POST',
+        json: {
+           recipient: {
+               id: senderID
+           },
+           sender_action: "typing_on"
+         }
+       }, function(error, response, body) {
+        if (error) {
+         console.log("TYPING DIDNT WORK"+error);
+         return;
        }
-     };
-
+       if (response.statusCode == 200) {
+         console.log("TYPING WORKED!\n"+,body);
+       } else {
+         console.log("receive status code : " + response.statusCode);
+       }
+     });
+    }
+    async.series([
+      setTimeout(sendBubbles(), 150),
+      callback()
+    ])
 
      console.log("#######\nTYPING\n#######");
-     request(options, function(error, response, body) {
+     request(var options = {
+       url: 'https://graph.facebook.com/v2.6/me/messages',
+       qs: {
+         access_token: token
+       },
+       method: 'POST',
+       json: {
+          recipient: {
+              id: senderID
+          },
+          sender_action: "typing_on"
+        }
+      }, function(error, response, body) {
        if (error) {
         console.log("TYPING DIDNT WORK"+error);
         return;
       }
       if (response.statusCode == 200) {
-        console.log("TYPING WORKED!\n"+body);
+        console.log("TYPING WORKED!\n"+,body);
       } else {
         console.log("receive status code : " + response.statusCode);
       }

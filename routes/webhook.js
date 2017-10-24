@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-const delay = require('delay');
 
 // custom
 const interactions = require('.././interactions');
@@ -28,8 +27,9 @@ router.post('/', function(req, res) {
       let text = event.message.text;
 
       // if text matches command
-      if (commands[interactions.removePunctAndLowerCase(text)]) {
-          interactions.typingBubble(sender).then(delay(150)).then(interactions.sendTextMessage(sender, commands[interactions.removePunctAndLowerCase(text)]));
+      var filteredText = commands[interactions.removePunctAndLowerCase(text)]
+      if (filteredText) {
+          interactions.typingBubble(sender, 150, interactions.sendTextMessage(sender, filteredText));
         continue
       }
       else {
