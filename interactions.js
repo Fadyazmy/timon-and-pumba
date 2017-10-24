@@ -126,8 +126,9 @@ module.exports = {
     }
   },
   typingBubble: function(senderID){
+    var uri = 'https://graph.facebook.com/v2.6/me/messages?access_token=' + process.env.FB_PAGE_APP_ID;
     var options = {
-        uri: 'https://graph.facebook.com/v2.6/me/messages?access_token=' + process.env.FB_PAGE_APP_ID,
+        uri: uri,
      method: 'POST',
      headers: {
          'Content-Type': ' application/json'
@@ -136,11 +137,11 @@ module.exports = {
          'recipient': {
              'id': senderID
          },
-         'sender_action': 'typing_on',
-         'body': 'something something'
+         'sender_action': 'typing_on'
        }
      }
 
+     console.log("#######\nTYPING\n#######");
      request(options, function(error, response, body) {
        if (error) {
         console.log("TYPING DIDNT WORK"+error);
