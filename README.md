@@ -24,7 +24,7 @@ Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 - More efficient searching algorithms (v3) - DONE
 - Support at least 3 songs (v4) - DONE
 - Provide initial greeting message (v5) - DONE
-- Chatbot display typing for every message (v6)
+- Chatbot display typing for every message (v6) - DONE (not implemented)
 - Find out how to make the chatbot recognized by FB (v7)
 - Sing to Timon and Bumpa and they sing back the next sentance! (v8)
   - Use shazam to recognize song and if see if you can transcribe meaningful audio to text
