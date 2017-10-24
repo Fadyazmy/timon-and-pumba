@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "delay": "^2.0.0",
     "express": "^4.16.2",
     "fast-levenshtein": "^2.0.6",
     "fb": "^2.0.0",
