@@ -29,12 +29,12 @@ router.post('/', function(req, res) {
       // if text matches command
       var filteredText = commands[interactions.removePunctAndLowerCase(text)]
       if (filteredText) {
-          interactions.typingBubble(sender, 150, interactions.sendTextMessage(sender, filteredText));
+          interactions.typingBubble(sender, 150, function(){interactions.sendTextMessage(sender, filteredText)});
         continue
       }
       else {
         // Reply with song name and next line ;)
-        interactions.sendTextMessage(sender, function(){interactions.getlNextline(text)});
+        interactions.sendTextMessage(sender, interactions.getlNextline(text));
       }
     }
     else if (event.postback && event.postback.payload){
