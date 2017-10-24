@@ -33,7 +33,7 @@ router.post('/', function(req, res) {
 
           async.series([
             console.log("#######\nTYPING\n#######"),
-            interactions.typingBubble(sender);
+            interactions.typingBubble(sender),
             console.log("#######\nCALBACKING\n#######"),
             delay(100),
             console.log("#######\nDELAYING\n########"),
