@@ -31,17 +31,8 @@ router.post('/', function(req, res) {
       // if text matches command
       var filteredText = commands[interactions.removePunctAndLowerCase(text)]
       if (filteredText) {
-
-          async.series([
-            console.log("#######\nTYPING\n#######"),
-            interactions.typingBubble(sender),
-            console.log("#######\nCALBACKING\n#######"),
-            delay(100),
-            console.log("#######\nDELAYING\n########"),
-            interactions.sendTextMessage(sender, filteredText)
-
-          ]);
-
+        interactions.typingBubble(sender),
+        interactions.sendTextMessage(sender, filteredText)
         continue
       }
       else {
