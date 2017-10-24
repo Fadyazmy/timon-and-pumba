@@ -126,20 +126,19 @@ module.exports = {
     }
   },
   typingBubble: function(senderID){
-    var uri = 'https://graph.facebook.com/v2.6/me/messages?access_token=' + process.env.FB_PAGE_APP_ID;
     var options = {
-        uri: uri,
-     method: 'POST',
-     headers: {
-         'Content-Type': ' application/json'
-     },
+      url: 'https://graph.facebook.com/v2.10/me/messages',
+      qs: {
+        access_token: process.env.FB_PAGE_APP_ID
+      },
      json: {
          'recipient': {
              'id': senderID
          },
          'sender_action': 'typing_on'
        }
-     }
+     };
+
 
      console.log("#######\nTYPING\n#######");
      request(options, function(error, response, body) {
