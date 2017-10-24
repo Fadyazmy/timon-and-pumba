@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
     "body-parser": "^1.18.2",
     "delay": "^2.0.0",
     "express": "^4.16.2",
