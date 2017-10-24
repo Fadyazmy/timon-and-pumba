@@ -131,11 +131,12 @@ module.exports = {
       qs: {
         access_token: process.env.FB_PAGE_APP_ID
       },
-     json: {
-         'recipient': {
+      method: 'POST',
+      json: {
+         recipient: {
              'id': senderID
          },
-         'sender_action': 'typing_on'
+         sender_action: 'typing_on'
        }
      };
 
