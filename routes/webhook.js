@@ -4,6 +4,7 @@ var router = express.Router();
 // custom
 const interactions = require('.././interactions');
 const commands = require('.././commands');
+const async = require('async');
 const delay = require('delay');
 
 
