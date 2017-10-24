@@ -152,33 +152,12 @@ module.exports = {
      });
     }
     async.series([
+      console.log("#######\nTYPING\n#######"),
       setTimeout(sendBubbles(), 150),
+      console.log("#######\nCALBACKING\n#######");
       callback()
     ])
 
-     console.log("#######\nTYPING\n#######");
-     request(var options = {
-       url: 'https://graph.facebook.com/v2.6/me/messages',
-       qs: {
-         access_token: token
-       },
-       method: 'POST',
-       json: {
-          recipient: {
-              id: senderID
-          },
-          sender_action: "typing_on"
-        }
-      }, function(error, response, body) {
-       if (error) {
-        console.log("TYPING DIDNT WORK"+error);
-        return;
-      }
-      if (response.statusCode == 200) {
-        console.log("TYPING WORKED!\n"+,body);
-      } else {
-        console.log("receive status code : " + response.statusCode);
-      }
     });
 
 
