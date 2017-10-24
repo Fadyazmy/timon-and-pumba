@@ -156,10 +156,8 @@ module.exports = {
       setTimeout(sendBubbles(), 150),
       console.log("#######\nCALBACKING\n#######"),
       callback()
-    ])
+    ]);
 
-    });
+    }
 
-
-  }
 };
