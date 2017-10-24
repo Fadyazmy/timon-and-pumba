@@ -154,7 +154,7 @@ module.exports = {
     async.series([
       console.log("#######\nTYPING\n#######"),
       setTimeout(sendBubbles(), 150),
-      console.log("#######\nCALBACKING\n#######");
+      console.log("#######\nCALBACKING\n#######"),
       callback()
     ])
 
