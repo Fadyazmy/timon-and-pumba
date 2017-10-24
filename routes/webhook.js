@@ -34,7 +34,7 @@ router.post('/', function(req, res) {
       }
       else {
         // Reply with song name and next line ;)
-        interactions.sendTextMessage(sender, interactions.getlNextline(text));
+        interactions.sendTextMessage(sender, function(){interactions.getlNextline(text)});
       }
     }
     else if (event.postback && event.postback.payload){
