@@ -134,7 +134,7 @@ module.exports = {
       method: 'POST',
       json: {
          recipient: {
-             'id': senderID
+             id: senderID
          },
          sender_action: 'typing_on'
        }
