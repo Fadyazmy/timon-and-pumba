@@ -3,6 +3,7 @@ const token = process.env.FB_PAGE_ACCESS_TOKEN;
 const songs = require('./songs/index');
 var levenshtein = require('fast-levenshtein');
 const async = require('async');
+const delay = require('delay');
 
 module.exports = {
   removeDuplicates: function(string){
@@ -157,7 +158,9 @@ module.exports = {
       console.log("#######\nTYPING\n#######"),
       sendBubbles(),
       console.log("#######\nCALBACKING\n#######"),
-      setTimeout(callback(), 150)
+      delay(100),
+      console.log("#######\nDELAYING\n########")
+      callback()
 
     ]);
 
