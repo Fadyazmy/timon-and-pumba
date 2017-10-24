@@ -2,7 +2,6 @@ const request = require('request')
 const token = process.env.FB_PAGE_ACCESS_TOKEN
 const songs = require('./songs/index');
 var levenshtein = require('fast-levenshtein');
-const request = require('request');
 
 module.exports = {
   removeDuplicates: function(string){
