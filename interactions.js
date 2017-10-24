@@ -124,7 +124,7 @@ module.exports = {
       })
 
     }
-  },,
+  },
   typingBubble: function(senderID){
     var options = {
         uri: 'https://graph.facebook.com/v2.6/me/messages?access_token=' + process.env.FB_PAGE_APP_ID,
@@ -138,7 +138,7 @@ module.exports = {
          },
          'sender_action': 'typing_on',
          'body': 'something something'
+       }
      }
-    }
   }
 };
