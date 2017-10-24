@@ -23,7 +23,9 @@ Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
   - close/similar/typos representations of words would work i.e "wart-hoooog" = "warthog" (v2) - DONE
 - More efficient searching algorithms (v3) - DONE
 - Support at least 3 songs (v4) - DONE
-- Provide initial greeting message, and find out how to make the chatbot recognized by FB (v5)
+- Provide initial greeting message (v5) - DONE
+- Chatbot display typing for every message (v6)
+- Find out how to make the chatbot recognized by FB (v7)
 - Sing to Timon and Bumpa and they sing back the next sentance! (v6)
 - Respond with a variety of (custom made) GIFs, video snippets and text (v7)
 - Chatbot intent / context = which 'hakuna matata'
