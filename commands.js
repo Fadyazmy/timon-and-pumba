@@ -15,7 +15,7 @@ module.exports = {
   "what songs do you know": getSongsList(songs),
   "song list": getSongsList(songs),
   "songs": getSongsList(songs),
-  "help": "List of commands: \n> Songs \n> What songs do you know? ",
+  "help": "We can sings together!\nHere are the list of commands: \n> Songs \n> What songs do you know? ",
   "hi": "Hi! You can write any song line you'd like! Or type `help` to explore more features.",
   "hello": "Hello! You can write any song line you'd like! Or type `help` to explore more features.",
   "get started": "Hello stranger! Pumba and I want to welcome you our fanpage! :D"

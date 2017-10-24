@@ -117,10 +117,12 @@ module.exports = {
   messPostback: function(senderID, posback){
     if (posback.payload == "GREETINGS_POSTBACK"){
       this.sendTextMessage(senderID, "Hello stranger! Pumba and I want to welcome you our fanpage! :)" );
+      this.sendTextMessage(senderID, "We can together all night long! Try and message us 'hakuna matata'! " );
     }else {
       this.sendTextMessage(senderID, {
         text: "Postback from" + senderID+ JSON.stringify(postback)
       })
+
     }
   },
 };
