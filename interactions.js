@@ -127,7 +127,7 @@ module.exports = {
   },
   typingBubble: function(senderID, length , callback){
     var sendBubbles = function() {
-      request(var options = {
+      request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {
           access_token: token
