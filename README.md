@@ -7,6 +7,8 @@ Try me out @ https://messenger.com/Timon-Pumba-Fanpage-123330215012542/.
 
 Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 
+![](https://cl.ly/0O1v3M262A0B/Screen%20Recording%202017-10-28%20at%2002.26%20PM.gif)
+
 ### Current songs (more to come!):
 - Hakuna Matata
 - Can you feel the love tonight?
