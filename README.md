@@ -29,7 +29,7 @@ Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 - Website for chatbot (v8) - DONE
 - Respond with a variety of (custom made) GIFs, video snippets and text (v9) - TODO
   - If short response use GIF
-- Chatbot intent / context = which 'hakuna matata' (v10) - TODO
+- Better website and readme with GIFs showing functionality
 
 
 NOTE: This is not affiliated with Disney or the creators of Timon & Pumba in any way.

@@ -31,7 +31,7 @@ router.post('/', function(req, res) {
       // if text matches command
       var filteredText = commands[interactions.removePunctAndLowerCase(text)]
       if (filteredText) {
-        interactions.typingBubble(sender),
+        // interactions.typingBubble(sender);
         interactions.sendTextMessage(sender, filteredText)
         continue
       }
