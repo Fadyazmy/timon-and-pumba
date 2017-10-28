@@ -7,7 +7,7 @@ Try me out @ https://messenger.com/Timon-Pumba-Fanpage-123330215012542/.
 
 Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 
-![](https://cl.ly/0O1v3M262A0B/Screen%20Recording%202017-10-28%20at%2002.26%20PM.gif)
+![](https://cl.ly/1b3Z0R0O1u2U/Screen%20Recording%202017-10-28%20at%2002.41%20PM.gif)
 
 ### Current songs (more to come!):
 - Hakuna Matata
@@ -31,7 +31,7 @@ Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 - Website for chatbot (v8) - DONE
 - Respond with a variety of (custom made) GIFs, video snippets and text (v9) - TODO
   - If short response use GIF
-- Better website and readme with GIFs showing functionality
+- Better website and readme with GIFs showing functionality - DONE
 
 
 NOTE: This is not affiliated with Disney or the creators of Timon & Pumba in any way.
