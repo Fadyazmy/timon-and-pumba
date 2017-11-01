@@ -32,7 +32,7 @@ module.exports = {
             let name = songs[i][0];
             let currentLine = songs[i][1][indexIThink];
             let nextLine = songs[i][1][indexIThink + 1];
-            let response = "["+songs[i][0]+"]"+ "\n\n"+ currentLine+ "\n"+nextLine;
+            let response = "["+songs[i][0]+"]"+ "\n\n> "+ currentLine+ "\n> "+nextLine;
             return response;
         }
       }
