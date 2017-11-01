@@ -29,7 +29,7 @@ Check me out at https://fb.com/Timon-Pumba-Fanpage-123330215012542.
 - Chatbot display typing for every message (v6) - DONE (not implemented)
 - Find out how to make the chatbot recognized by FB (v7) - DONE
 - Website for chatbot (v8) - DONE
-- Respond with a variety of (custom made) GIFs, video snippets and text (v9) - TODO
+- Respond with a variety of (custom made) GIFs, video snippets, audio and text (v9) - TODO
   - If short response use GIF
 - Better website and readme with GIFs showing functionality - DONE
 
